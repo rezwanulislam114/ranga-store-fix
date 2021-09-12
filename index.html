@@ -5,25 +5,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <title>Fashionova</title>
+  <!-- font awsome icon  -->
+  <script src="https://kit.fontawesome.com/e7bd00459f.js" crossorigin="anonymous"></script>
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  
   <!-- google Montserrat  font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- custom css  -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <header></header>
+  <header class="header">
+    <h1 class="header-title">Fashionova</h1>
+    <p>A E-Commerce Platform. <br> We Provide Everything Thats You Want!</p>
+  </header>
   <main class="main">
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
+        <input id="input-field" class="input-field" type="text">
+        <button type="button" class="search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
         </button>
@@ -32,6 +40,22 @@
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
+
+
+          <!-- this is for design  -->
+          <div class="single-product">
+            <div>
+              <img class="product-image"></img>
+            </div>
+              <h3>Beaulifur pants</h3>
+              <p>Category: ware and just you</p>
+              <h2>Price: $ 460.25</h2>
+              <button id="addToCart-btn" class=" cart-button"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+              <button id="details-btn" class=" detail-button"><i class="fas fa-info-circle"></i>Details</button>
+          </div>
+
+
+
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
