@@ -59,6 +59,9 @@ body {
   padding: 20px 10px;
   transition: 0.4s;
   margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .single-product:hover {
   box-shadow: 2px 4px 7px gray;
@@ -115,7 +118,6 @@ body {
 }
 .buynow-button:hover {
   background: rgb(0, 94, 172);
-
 }
 
 

@@ -16,16 +16,20 @@ const showProducts = (products) => {
     div.classList.add("single-product");
 
     // html ui part
-    div.innerHTML = `<div">
-      <div>
-    <img class="product-image" src=${image}></img>
-      </div>
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <p>${product.rating.rate} <i class="fas fa-star"></i><br>${product.rating.count} reviews</p>
-      <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="cart-button"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-      <button id="details-btn" class="detail-button"><i class="fas fa-info-circle"></i>Details</button></div>
+    div.innerHTML = `
+        <div>
+          <div>
+            <img class="product-image" src=${image}></img>
+          </div>
+          <h3>${product.title}</h3>
+          <p>Category: ${product.category}</p>
+          <p>${product.rating.rate} <i class="fas fa-star"></i><br>${product.rating.count} reviews</p>
+        </div>
+        <div>
+          <h2>Price: $ ${product.price}</h2>
+          <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="cart-button"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+          <button id="details-btn" class="detail-button"><i class="fas fa-info-circle"></i>Details</button>
+        </div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
