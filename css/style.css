@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
+
+
+/* ---------------- header section ----------------- */
 .header {
   text-align: center;
 }
@@ -9,6 +13,10 @@ body {
   letter-spacing: 4px;
   font-weight: 600;
 }
+
+
+
+/* ---------------- search section ----------------- */
 .search-box {
   display: flex;
   border: 1px solid rgb(3, 118, 211);
@@ -35,6 +43,10 @@ body {
 .search-button:hover {
   background: rgb(0, 94, 172);
 }
+
+
+
+/* ---------------- product section ----------------- */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,6 +60,18 @@ body {
   transition: 0.4s;
   margin: 30px 0;
 }
+.single-product:hover {
+  box-shadow: 2px 4px 7px gray;
+  border-radius: 10px;
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+/* ---------------- button design ----------------- */
 .cart-button {
   background: rgb(0, 170, 13, .70);
   color: rgb(255, 255, 255);
@@ -93,17 +117,12 @@ body {
   background: rgb(0, 94, 172);
 
 }
-.single-product:hover {
-  box-shadow: 2px 4px 7px gray;
-  border-radius: 10px;
-}
-.product-image {
-  width: 150px;
-  height: 150px;
-}
+
+
+
+/* ---------------- cart section ----------------- */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;

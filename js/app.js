@@ -1,3 +1,4 @@
+// api call function
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
   fetch(url)
@@ -5,6 +6,7 @@ const loadProducts = () => {
     .then((data) => showProducts(data));
 };
 loadProducts();
+
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
@@ -12,6 +14,8 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("single-product");
+
+    // html ui part
     div.innerHTML = `<div">
       <div>
     <img class="product-image" src=${image}></img>
@@ -35,6 +39,7 @@ const addToCart = (id, price) => {
   document.getElementById("total-Products").innerText = count;
 };
 
+// get input function
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
