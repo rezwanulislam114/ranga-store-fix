@@ -9,7 +9,6 @@ loadProducts();
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    console.log(product);
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("single-product");
@@ -31,15 +30,15 @@ let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
-  updateTotal();
   updateTaxAndCharge();
+  updateTotal();
   document.getElementById("total-Products").innerText = count;
 };
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
-  // const conver 
+  console.log(converted); 
   return converted;
 };
 
